@@ -3,24 +3,43 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/select.h>
+#include <dirent.h>
+#include <string.h>
+
+#define MAX_PATH 2048
+#define SPEED 80000
 
 
-int main(int argc, char **argv) {
-	FILE **files = malloc(argc*sizeof(FILE*));
-	FILE *file;
-	char c;
-	int frame = 1;
-
+int main(void) {
+	struct dirent **dir;
+	char c, path[MAX_PATH] = "/usr/local/lib/parrot/frames/text", full_path[MAX_PATH];
 	fd_set readfds;
 	struct timeval tv;
-	int ch;
-	int b = 1, ret;
-
-	for(int i = 1; i < argc; i++)
-		files[i] = fopen(argv[i], "r");
-
+	int ch, n, iter = 1, ret, frame = 2;
+	FILE **files;
+	
+	n = scandir(path, &dir, 0, alphasort);
+	if(n < 0) {
+		perror("ERROR: scandir error...");
+		exit(1);
+	} else {
+		files = malloc(n*sizeof(FILE*));
+		for(int i = 2; i < n; i++){
+			full_path[0] = '\0';
+			strcat(full_path, path);
+			strcat(full_path, "/");
+			strcat(full_path, dir[i]->d_name);
+			files[i] = fopen(full_path, "r");
+		}
+	}
+	
+	if(!files) {
+		perror("ERROR: files error...");
+		exit(1);
+	} 
+	
 	FD_ZERO(&readfds);
-	while (b) {
+	while(iter) {
 		FD_SET(STDIN_FILENO, &readfds);
 		tv.tv_sec = 0;
 		tv.tv_usec = 0;
@@ -28,25 +47,24 @@ int main(int argc, char **argv) {
 		system("clear");
 		while((c = fgetc(files[frame])) != EOF)
 			printf("%c", c);
-		usleep(80000);
+		usleep(SPEED);
 		rewind(files[frame]);
-		
+
 		frame++;
-		if(frame >= argc)
-			frame = 1;
+		if(frame >= n)
+			frame = 2;
 		
 		ret = select(STDIN_FILENO + 1, &readfds, NULL, NULL, &tv);
 		if (ret < 0) {
-			perror("select error");
+			perror("ERROR: select error...");
 			exit(1); 
 		} else if (FD_ISSET(STDIN_FILENO, &readfds)) {
 			ch = fgetc(stdin);
 			if (ch == 'q') {
-				b = 0;
+				iter = 0;
+				system("clear");
 			}
 		}
-		fprintf(stderr, ".");
 	}
-
 	return 0;
 }
