@@ -21,7 +21,7 @@ $ parrot
 ```
 
 <p align="center">
-  <img src="./assets/example_gif.gif" alt="example" width="500"/>
+  <img src="./assets/example.gif" alt="example" width="700"/>
 </p>
 <p align="center">
   <span> <i> enjoy 😃 </i> </span>
