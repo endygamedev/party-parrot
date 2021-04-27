@@ -28,7 +28,7 @@ $ parrot
 </p>
 
 ## Is this fork?
-#### — Yes, I took the idea from [here](https://github.com/jmhobbs/terminal-parrot) and implemented it on C.
+#### — Yes, I took the idea [here](https://github.com/jmhobbs/terminal-parrot) and implemented it on C.
 
 <br>
 <p align="center">
