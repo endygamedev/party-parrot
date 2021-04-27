@@ -9,17 +9,15 @@ int main(int argc, char **argv) {
 	FILE **files = malloc(argc*sizeof(FILE*));
 	FILE *file;
 	char c;
-	int frame = 0;
+	int frame = 1;
 
 	fd_set readfds;
 	struct timeval tv;
 	int ch;
 	int b = 1, ret;
 
-
-	for(int i = 1; i < argc; i++) {
+	for(int i = 1; i < argc; i++)
 		files[i] = fopen(argv[i], "r");
-	}
 
 	FD_ZERO(&readfds);
 	while (b) {
@@ -28,12 +26,15 @@ int main(int argc, char **argv) {
 		tv.tv_usec = 0;
 
 		system("clear");
-		while((c = fgetc(files[frame%argc])) != EOF)
+		while((c = fgetc(files[frame])) != EOF)
 			printf("%c", c);
-		usleep(300000);
-		rewind(files[frame%argc]);
+		usleep(80000);
+		rewind(files[frame]);
+		
 		frame++;
-
+		if(frame >= argc)
+			frame = 1;
+		
 		ret = select(STDIN_FILENO + 1, &readfds, NULL, NULL, &tv);
 		if (ret < 0) {
 			perror("select error");
