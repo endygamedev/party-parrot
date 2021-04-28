@@ -1,8 +1,4 @@
-<p align="center">
-  <img src="./assets/parrot.gif" alt="parrot" width="40"/>
-</p>
-
-# :parrot: «Your own Party Parrot for terminal»
+<h1> <img src="./assets/parrot.gif" alt="parrot" width="50"/> «Your own Party Parrot for terminal» </h1>
 
 ## Why do you need to install this?
 ### — Next question
