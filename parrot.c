@@ -6,18 +6,29 @@
 #include <dirent.h>
 #include <string.h>
 
+
 #define MAX_PATH 2048
 #define SPEED 80000
 
 
-int main(void) {
+int main(int argc, char **argv) {
 	struct dirent **dir;
-	char c, path[MAX_PATH] = "/usr/local/lib/parrot/frames/text", full_path[MAX_PATH];
+	char c, path[MAX_PATH] = "/usr/local/lib/parrot/frames/", full_path[MAX_PATH];
 	fd_set readfds;
 	struct timeval tv;
 	int ch, n, iter = 1, ret, frame = 2;
 	FILE **files;
 	
+	if(argc > 1) {
+		if(!strcmp(argv[1], "ascii"))
+			strcat(path, "ascii_text");
+		else
+			strcat(path, "text");
+	} else {
+		strcat(path, "text");
+	}
+
+
 	n = scandir(path, &dir, 0, alphasort);
 	if(n < 0) {
 		perror("ERROR: scandir error...");
