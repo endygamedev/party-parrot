@@ -27,6 +27,8 @@ $ parrot
   <span> <i> enjoy 😃 </i> </span>
 </p>
 
+If you need to stop this just type: `q + <Enter>` or `Ctrl + C`
+
 ## Is this fork?
 #### — Yes, I took the idea [here](https://github.com/jmhobbs/terminal-parrot) and implemented it on C.
 
