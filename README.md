@@ -20,7 +20,7 @@ $ parrot
   <img src="./assets/example.gif" alt="example" width="700"/>
 </p>
 <p align="center">
-  <span> <i> enjoy 😃 </i> </span>
+  <span> <i> enjoy <img src="./assets/parrot.gif" alt="parrot" width="20"/> </i> </span>
 </p>
 
 If you need to stop this just type: `q + <Enter>` or `Ctrl + C`
