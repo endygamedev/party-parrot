@@ -25,6 +25,17 @@ $ parrot
 
 If you need to stop this just type: `q + <Enter>` or `Ctrl + C`
 
+```
+$ parrot ascii
+```
+
+<p align="center">
+  <img src="./assets/example_ascii.gif" alt="example_ascii" width="700"/>
+</p>
+<p align="center">
+  <span> <i> enjoy <img src="./assets/parrot.gif" alt="parrot" width="20"/> </i> </span>
+</p>
+
 ## Is this fork?
 #### — Yes, I took the idea [here](https://github.com/jmhobbs/terminal-parrot) and implemented it on C.
 
