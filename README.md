@@ -65,7 +65,8 @@ $ parrot ascii
     :arrow_up: <a href="#"><b>Back to top</b></a> :arrow_up:
 </p>
 
-<br>
+---
+
 <p align="center">
   <sub> < <a href="https://endygamedev.github.io"> :man_technologist: endygamedev </a> | <a href="https://endygamedev.github.io/party-parrot/"> :parrot: project webpage</a> /> </sub>
 </p>
