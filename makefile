@@ -2,13 +2,13 @@ TARGET = parrot
 PREFIX = /usr/local/bin
 ASSETS = /usr/local/lib
 
-.PHONY: all clean install uninstall
+.PHONY: all clean install uninstall update
 
 all:
 	echo $(TARGET)
 
 clean:
-	rm -rf $(TARGET) *.o
+	sudo rm -rf $(TARGET) *.o
 
 parrot.o:
 	parrot.c gcc -c -o parrot.o parrot.c
@@ -22,5 +22,10 @@ install:
 	cp -r ./frames $(ASSETS)/parrot/
 
 uninstall:
-	rm -rf $(PREFIX)/$(TARGET)
-	rm -rf $(ASSETS)/parrot
+	sudo rm -rf $(PREFIX)/$(TARGET)
+	sudo rm -rf $(ASSETS)/parrot
+
+update:
+	sudo make uninstall
+	git pull
+	sudo make install
