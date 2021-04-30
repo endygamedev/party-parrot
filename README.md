@@ -5,6 +5,8 @@
   <ol>
     <li><b><a href="#why">Why do you need to install this?</a></b></li>
     <li><b><a href="#installing">Installing</a></b></li>
+    <li><b><a href="#uninstalling">Uninstalling</a></b></li>
+    <li><b><a href="#update">Update</a></b></li>    
     <li><b><a href="#usage">Usage</a></b></li>
     <li><b><a href="#fork">Is this fork?</a></b></li>
   </ol>
@@ -23,7 +25,25 @@
 ```
 $ git clone https://github.com/endygamedev/party-parrot.git
 $ cd party-parrot
-$ make install
+$ sudo make install
+```
+
+<a id="uninstalling">
+  <h2>Uninstalling</h2>
+</a>
+<h3> Make </h3>
+
+```
+$ sudo make uninstall
+```
+
+<a id="update">
+  <h2>Update</h2>
+</a>
+<h3> Make </h3>
+
+```
+$ sudo make update
 ```
 
 <a id="usage">
