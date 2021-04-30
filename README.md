@@ -1,4 +1,7 @@
 <h1 align="center"><code>«Your own Party Parrot for terminal»</code></h1>
+<p align="right">
+  <a href="https://github.com/endygamedev/party-parrot/actions/workflows/main.yml"><img src="https://github.com/endygamedev/party-parrot/actions/workflows/main.yml/badge.svg?branch=main"></a>
+</p>
 
 <details>
   <summary> <b> <img src="./assets/parrot.gif" alt="parrot" width="25"/> Table of content </b> </summary>
