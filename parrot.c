@@ -98,5 +98,7 @@ int main(int argc, char *argv[]) {
 			}
 		}
 	}
+
+	free(files);
 	return 0;
 }
