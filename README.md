@@ -28,8 +28,8 @@ $ cd party-parrot
 $ sudo make install
 ```
 
-<a id="uninstal">
-  <h2>Uninstal</h2>
+<a id="uninstall">
+  <h2>Uninstall</h2>
 </a>
 <h3> Make </h3>
 
