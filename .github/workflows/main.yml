@@ -14,7 +14,10 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Git Clone
-        run: git clone https://github.com/endygamedev/party-parrot.git
+        run: |
+          git clone https://github.com/endygamedev/party-parrot.git
+          git config --global user.email "bronnikov.40@mail.ru"
+          git config --global user.name "Egor"
       
       - name: Git Commit
         run: |
