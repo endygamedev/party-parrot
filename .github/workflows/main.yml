@@ -1,4 +1,4 @@
-name: CI
+name: Changelog CI
 
 on:
   push:
@@ -21,7 +21,7 @@ jobs:
       
       - name: Git Commit
         run: |
-          echo $(git log -1 --pretty=tformat:"\n\nDate: %cd\nCommiter name: %cn\nMessage: %B") >> CHANGELOG.md
+          echo $(git log -1 --pretty=tformat:"<br><br>Date: %cd<br>Commiter name: %cn<br>Message: %B") >> CHANGELOG.md
           git add .
           git commit -m 'CHANGELOG CI'
           git push
