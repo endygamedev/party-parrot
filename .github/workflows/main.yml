@@ -10,6 +10,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
-      - name: Run a one-line script
-        run: echo Hello, world! >> CHANGELOG.md
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Git Clone
+        run: git clone https://github.com/endygamedev/party-parrot.git
+      
+      - name: Git Commit
+        run: |
+          echo "Hello" >> CHANGELOG.md
+          git add .
+          git commit -m 'Test CI!'
+          git push
