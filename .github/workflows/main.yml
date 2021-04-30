@@ -21,7 +21,8 @@ jobs:
       
       - name: Git Commit
         run: |
-          echo "Hello" >> CHANGELOG.md
+          echo $(git log -1 --pretty=tformat:"\n\nDate: %cd\nCommiter name: %cn\nMessage: %B") >> CHANGELOG.md
           git add .
-          git commit -m 'Test CI!'
+          git commit -m 'CHANGELOG CI'
           git push
+          sudo rm -rf pretty-parrot
