@@ -64,6 +64,8 @@ $ parrot -c ascii
 $ parrot -s 120000
 ```
 
+And also you can combine this two keys
+
 <a id="fork">
   <h2>Is this fork?</h2>
 </a>
