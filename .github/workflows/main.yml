@@ -21,8 +21,10 @@ jobs:
       
       - name: Git Commit
         run: |
-          echo $(git log -1 --pretty=tformat:"<br><br>Date: %cd<br>Commiter name: %cn<br>Message: %B") >> CHANGELOG.md
+          echo $(git log -1 --pretty=tformat:"<br><h4>%B</h4><br><h6>%cd</h6><br>") >> CHANGELOG.md
           git add .
           git commit -m 'CHANGELOG CI'
           git push
-          sudo rm -rf pretty-parrot
+      
+      - name: Remove folder
+        run: sudo rm -rf pretty-parrot
