@@ -40,7 +40,6 @@ int main(int argc, char *argv[]) {
 				strcat(path, "ascii_text");
 			else
 				strcat(path, "text");
-			printf("%s", path);
 			continue;
 		}
 
@@ -80,7 +79,6 @@ int main(int argc, char *argv[]) {
 		system("clear");
 		while((c = fgetc(files[frame])) != EOF)
 			printf("%c", c);
-		printf("%d", speed);
 		usleep(speed);
 		rewind(files[frame]);
 
