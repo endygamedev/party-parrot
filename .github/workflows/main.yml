@@ -7,11 +7,6 @@ on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -38,8 +33,12 @@ jobs:
           config_file: changelog-ci-config.json
           # Optional, This will be used to configure git
           # defaults to `github-actions[bot]` if not provided.
-          committer_username: 'test'
-          committer_email: 'test@test.com'
+          committer_username: 'Egor'
+          committer_email: 'bronnikov.40@mail.ru'
+          changelog_type: 'commit_message'
+          commit_changelog: true
+          comment_changelog: true
+          version_regex: 'v?([0-9]{1,2})+[.]+([0-9]{1,2})+[.]+([0-9]{1,2})\s\(\d{1,2}-\d{1,2}-\d{4}\)'
         env:
           # optional, only required for `private` repositories
           # and required if the changelog comment
