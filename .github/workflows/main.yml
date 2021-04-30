@@ -22,7 +22,14 @@ jobs:
 
       - name: Run Changelog CI
         uses: saadmk11/changelog-ci@v0.8.0
+        
         with:
+          changelog_type: 'commit_message' # or 'pull_request'
+          header_prefix: 'Version:'
+          commit_changelog: true
+          comment_changelog: true
+          pull_request_title_regex: '^Release'
+          version_regex: 'v?([0-9]{1,2})+[.]+([0-9]{1,2})+[.]+([0-9]{1,2})\s\(\d{1,2}-\d{1,2}-\d{4}\)'
           # Optional, you can provide any name for your changelog file,
           # defaults to `CHANGELOG.md` if not provided.
           changelog_filename: CHANGELOG.md
@@ -35,10 +42,6 @@ jobs:
           # defaults to `github-actions[bot]` if not provided.
           committer_username: 'Egor'
           committer_email: 'bronnikov.40@mail.ru'
-          changelog_type: 'commit_message'
-          commit_changelog: true
-          comment_changelog: true
-          version_regex: 'v?([0-9]{1,2})+[.]+([0-9]{1,2})+[.]+([0-9]{1,2})\s\(\d{1,2}-\d{1,2}-\d{4}\)'
         env:
           # optional, only required for `private` repositories
           # and required if the changelog comment
