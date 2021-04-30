@@ -43,8 +43,12 @@ $ parrot
 
 If you need to stop this just type: `q + <Enter>` or `Ctrl + C`
 
+<h3>Keys</h3>
+
+<h4>Change encoded image</h4>
+
 ```
-$ parrot ascii
+$ parrot -c ascii
 ```
 
 <p align="center">
@@ -53,6 +57,12 @@ $ parrot ascii
 <p align="center">
   <span> <i> enjoy <img src="./assets/parrot.gif" alt="parrot" width="20"/> </i> </span>
 </p>
+
+<h4>Change speed</h4>
+
+```
+$ parrot -s 120000
+```
 
 <a id="fork">
   <h2>Is this fork?</h2>
