@@ -29,3 +29,4 @@ update:
 	sudo make uninstall
 	git pull
 	sudo make install
+	sudo chmod -R ug+w .;
