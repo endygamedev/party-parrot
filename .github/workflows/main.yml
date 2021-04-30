@@ -21,7 +21,7 @@ jobs:
       
       - name: Git Commit
         run: |
-          echo $(git log -1 --pretty=tformat:"<h4>%B</h4>%cd") >> CHANGELOG.md
+          echo $(git log -1 --pretty=tformat:"<h3>%B</h3>Date: %cd") >> CHANGELOG.md
           git add .
           git commit -m 'CHANGELOG CI'
           git push
