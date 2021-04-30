@@ -55,7 +55,7 @@ $ parrot
 ```
 
 <p align="center">
-  <img src="./assets/example.gif" alt="example" width="700"/>
+  <img src="./assets/example_1.gif" alt="example_1" width="800"/>
 </p>
 <p align="center">
   <span> <i> enjoy <img src="./assets/parrot.gif" alt="parrot" width="20"/> </i> </span>
@@ -72,7 +72,7 @@ $ parrot -c ascii
 ```
 
 <p align="center">
-  <img src="./assets/example_ascii.gif" alt="example_ascii" width="700"/>
+  <img src="./assets/example_2.gif" alt="example_2" width="800"/>
 </p>
 <p align="center">
   <span> <i> enjoy <img src="./assets/parrot.gif" alt="parrot" width="20"/> </i> </span>
@@ -83,6 +83,13 @@ $ parrot -c ascii
 ```
 $ parrot -s 120000
 ```
+
+<p align="center">
+  <img src="./assets/example_3.gif" alt="example_3" width="800"/>
+</p>
+<p align="center">
+  <span> <i> enjoy <img src="./assets/parrot.gif" alt="parrot" width="20"/> </i> </span>
+</p>
 
 And also you can combine this two keys
 
