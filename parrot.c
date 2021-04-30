@@ -9,26 +9,48 @@
 
 #define MAX_PATH 2048
 #define SPEED 80000
+#define PATH "/usr/local/lib/parrot/frames/"
 
 
-int main(int argc, char **argv) {
+int is_number(char *arg) {
+	int b = 1;
+	for(int i = 0; i < strlen(arg); i++) {
+		if(!isdigit(arg[i])) {
+			b = 0;
+			break;
+		}
+	}
+	return b;
+}
+
+int main(int argc, char *argv[]) {
 	struct dirent **dir;
-	char c, path[MAX_PATH] = "/usr/local/lib/parrot/frames/", full_path[MAX_PATH];
+	char c, path[MAX_PATH] = PATH, full_path[MAX_PATH];
 	fd_set readfds;
 	struct timeval tv;
-	int ch, n, iter = 1, ret, frame = 2;
+	int ch, n, iter = 1, ret, frame = 2, speed = SPEED;
 	FILE **files;
+
+	strcat(path, "text");
 	
-	if(argc > 1) {
-		if(!strcmp(argv[1], "ascii"))
-			strcat(path, "ascii_text");
-		else
-			strcat(path, "text");
-	} else {
-		strcat(path, "text");
+	for(int i = 1; i < argc; i++) {
+		if(!strcmp("-c", argv[i])) {
+			strcpy(path, PATH);
+			if(!strcmp("ascii", argv[++i]))
+				strcat(path, "ascii_text");
+			else
+				strcat(path, "text");
+			printf("%s", path);
+			continue;
+		}
+
+		if(!strcmp("-s", argv[i])) {
+			speed = is_number(argv[++i]) ? atoi(argv[i]) : SPEED;
+			continue;
+		}
 	}
 
-
+	
 	n = scandir(path, &dir, 0, alphasort);
 	if(n < 0) {
 		perror("ERROR: scandir error...");
@@ -58,7 +80,8 @@ int main(int argc, char **argv) {
 		system("clear");
 		while((c = fgetc(files[frame])) != EOF)
 			printf("%c", c);
-		usleep(SPEED);
+		printf("%d", speed);
+		usleep(speed);
 		rewind(files[frame]);
 
 		frame++;
