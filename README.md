@@ -4,8 +4,8 @@
   <summary> <b> <img src="./assets/parrot.gif" alt="parrot" width="25"/> Table of content </b> </summary>
   <ol>
     <li><b><a href="#why">Why do you need to install this?</a></b></li>
-    <li><b><a href="#installing">Installing</a></b></li>
-    <li><b><a href="#uninstalling">Uninstalling</a></b></li>
+    <li><b><a href="#install">Install</a></b></li>
+    <li><b><a href="#uninstall">Uninstall</a></b></li>
     <li><b><a href="#update">Update</a></b></li>    
     <li><b><a href="#usage">Usage</a></b></li>
     <li><b><a href="#fork">Is this fork?</a></b></li>
@@ -17,8 +17,8 @@
 </a>
 <h3> — Next question </h3>
 
-<a id="installing">
-  <h2>Installing</h2>
+<a id="install">
+  <h2>Instal</h2>
 </a>
 <h3> Make </h3>
 
@@ -28,8 +28,8 @@ $ cd party-parrot
 $ sudo make install
 ```
 
-<a id="uninstalling">
-  <h2>Uninstalling</h2>
+<a id="uninstal">
+  <h2>Uninstal</h2>
 </a>
 <h3> Make </h3>
 
