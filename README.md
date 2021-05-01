@@ -21,7 +21,7 @@
 <h3> — Next question </h3>
 
 <a id="install">
-  <h2>Instal</h2>
+  <h2>Install</h2>
 </a>
 <h3> Make </h3>
 
