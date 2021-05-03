@@ -12,6 +12,7 @@
     <li><b><a href="#update">Update</a></b></li>    
     <li><b><a href="#usage">Usage</a></b></li>
     <li><b><a href="#fork">Is this fork?</a></b></li>
+    <li><b><a href="#license">License</a></b></li>
   </ol>
 </details>
 
@@ -101,6 +102,13 @@ And also you can combine this two keys
 </a>
 <h4> — Yes, I took the idea <a href="https://github.com/jmhobbs/terminal-parrot">here</a> and implemented it on C. </h4>
 
+<a id="license">
+  <h2>License</h2>
+</a>
+
+`party-parrot` is made available under the terms of either the MIT License.
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Лицензия Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
 
 <br>
 <p align="center">
