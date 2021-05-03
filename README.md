@@ -107,10 +107,9 @@ And also you can combine this two keys
 </a>
 
 `party-parrot` is made available under the terms of either the MIT License.
+See the [LICENSE](./LICENSE) files for license details.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Лицензия Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
-
-See the [LICENSE](./LICENSE) files for license details.
 
 <br>
 <p align="center">
