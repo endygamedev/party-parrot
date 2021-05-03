@@ -1,6 +1,7 @@
 <h1 align="center"><code>«Your own Party Parrot for terminal»</code></h1>
 <p align="right">
   <a href="https://github.com/endygamedev/party-parrot/actions/workflows/main.yml"><img src="https://github.com/endygamedev/party-parrot/actions/workflows/main.yml/badge.svg?branch=main"></a>
+  <img src="https://img.shields.io/badge/platform-linux%20%7C%20macos-lightgrey">
 </p>
 
 <details>
