@@ -8,3 +8,4 @@ All changes to this project will be documented in this file.
 <h3>:parrot: Edit part `License` in `README`</h3>Date: 2021-05-04 01:12:50 +0300
 <h3>:parrot: Edited README</h3>Date: 2021-05-04 01:13:45 +0300
 <h3>README</h3>Date: 2021-05-04 01:29:30 +0300
+<h3>README</h3>Date: 2021-05-06 23:54:55 +0300
