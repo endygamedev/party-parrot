@@ -27,7 +27,7 @@
 </a>
 <h3> Make </h3>
 
-```
+```bat
 $ git clone https://github.com/endygamedev/party-parrot.git
 $ cd party-parrot
 $ sudo make install
@@ -38,7 +38,7 @@ $ sudo make install
 </a>
 <h3> Make </h3>
 
-```
+```bat
 $ sudo make uninstall
 ```
 
@@ -47,7 +47,7 @@ $ sudo make uninstall
 </a>
 <h3> Make </h3>
 
-```
+```bash
 $ sudo make update
 ```
 
@@ -55,7 +55,7 @@ $ sudo make update
   <h2>Usage</h2>
 </a>
 
-```
+```bat
 $ parrot
 ```
 
@@ -72,7 +72,7 @@ If you need to stop this just type: `q + <Enter>` or `Ctrl + C`
 
 <h4>Change encoded image</h4>
 
-```
+```bat
 $ parrot -c ascii
 ```
 
@@ -85,7 +85,7 @@ $ parrot -c ascii
 
 <h4>Change speed</h4>
 
-```
+```bat
 $ parrot -s 120000
 ```
 
