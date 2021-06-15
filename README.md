@@ -22,7 +22,7 @@
 </details>
 
 <a href="#title_why" id="why"><h2>Why do you need to install this?</h2></a>
-<h3> — Next question </h3>
+— Next question
 
 <a href="#title_install" id="install"><h2>Install</h2></a>
 <h3> Make </h3>
@@ -79,8 +79,10 @@ $ parrot -c ascii
 
 <h4>Change speed</h4>
 
+Speed can vary from 1 to 15, where 1 is the fastest speed and 15 is the slowest.
+
 ```bat
-$ parrot -s 120000
+$ parrot -s 12
 ```
 
 <p align="center">
@@ -93,7 +95,7 @@ $ parrot -s 120000
 And also you can combine this two keys
 
 <a href="#title_fork" id="fork"><h2>Is this fork?</h2></a>
-<h4> — Yes, I took the idea <a href="https://github.com/jmhobbs/terminal-parrot">here</a> and implemented it on C. </h4>
+— Yes, I took the idea <b><a href="https://github.com/jmhobbs/terminal-parrot">here</a></b> and implemented it on C.
 
 <a href="#title_license" id="license"><h2>License</h2></a>
 
