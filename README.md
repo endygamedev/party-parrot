@@ -1,5 +1,5 @@
 
-<h1 align="center"><code> 🌈🦜 Party Parrot</code></h1>
+<h1 align="center"><code>Party Parrot</code></h1>
 <p align="center">
    <kbd>Your own Party Parrot for terminal</kbd>
 </p>
