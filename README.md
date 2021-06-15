@@ -4,27 +4,23 @@
   <img src="https://img.shields.io/badge/platform-linux%20%7C%20macos-lightgrey">
 </p>
 
-<details>
+<details open>
   <summary> <b> <img src="./assets/parrot.gif" alt="parrot" width="25"/> Table of content </b> </summary>
   <ol>
     <li><b><a href="#why" id="title_why">Why do you need to install this?</a></b></li>
-    <li><b><a href="#install">Install</a></b></li>
-    <li><b><a href="#uninstall">Uninstall</a></b></li>
-    <li><b><a href="#update">Update</a></b></li>    
-    <li><b><a href="#usage">Usage</a></b></li>
-    <li><b><a href="#fork">Is this fork?</a></b></li>
-    <li><b><a href="#license">License</a></b></li>
+    <li><b><a href="#install" id="title_install">Install</a></b></li>
+    <li><b><a href="#uninstall" id="title_uninstall">Uninstall</a></b></li>
+    <li><b><a href="#update" id="title_update">Update</a></b></li>
+    <li><b><a href="#usage" id="title_usage">Usage</a></b></li>
+    <li><b><a href="#fork" id="title_fork">Is this fork?</a></b></li>
+    <li><b><a href="#license" id="title_license">License</a></b></li>
   </ol>
 </details>
 
-<a href="#title_why" id="why">
-  <h2>Why do you need to install this?</h2>
-</a>
+<a href="#title_why" id="why"><h2>Why do you need to install this?</h2></a>
 <h3> — Next question </h3>
 
-<a id="install">
-  <h2>Install</h2>
-</a>
+<a href="#title_install" id="install"><h2>Install</h2></a>
 <h3> Make </h3>
 
 ```bat
@@ -33,27 +29,21 @@ $ cd party-parrot
 $ sudo make install
 ```
 
-<a id="uninstall">
-  <h2>Uninstall</h2>
-</a>
+<a href="#title_uninstall" id="uninstall"><h2>Uninstall</h2></a>
 <h3> Make </h3>
 
 ```bat
 $ sudo make uninstall
 ```
 
-<a id="update">
-  <h2>Update</h2>
-</a>
+<a href="#title_update" id="update"><h2>Update</h2></a>
 <h3> Make </h3>
 
 ```bash
 $ sudo make update
 ```
 
-<a id="usage">
-  <h2>Usage</h2>
-</a>
+<a href="#title_usage" id="usage"><h2>Usage</h2></a>
 
 ```bat
 $ parrot
@@ -98,14 +88,10 @@ $ parrot -s 120000
 
 And also you can combine this two keys
 
-<a id="fork">
-  <h2>Is this fork?</h2>
-</a>
+<a href="#title_fork" id="fork"><h2>Is this fork?</h2></a>
 <h4> — Yes, I took the idea <a href="https://github.com/jmhobbs/terminal-parrot">here</a> and implemented it on C. </h4>
 
-<a id="license">
-  <h2>License</h2>
-</a>
+<a href="#title_license" id="license"><h2>License</h2></a>
 
 `party-parrot` is made available under the terms of either the MIT License.
 See the [LICENSE](./LICENSE) files for license details.
