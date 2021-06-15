@@ -25,7 +25,7 @@
 — Next question
 
 <a href="#title_install" id="install"><h2>Install</h2></a>
-<h3> Make </h3>
+<h3>Make</h3>
 
 ```bat
 $ git clone https://github.com/endygamedev/party-parrot.git
@@ -34,14 +34,14 @@ $ sudo make install
 ```
 
 <a href="#title_uninstall" id="uninstall"><h2>Uninstall</h2></a>
-<h3> Make </h3>
+<h3>Make</h3>
 
 ```bat
 $ sudo make uninstall
 ```
 
 <a href="#title_update" id="update"><h2>Update</h2></a>
-<h3> Make </h3>
+<h3>Make</h3>
 
 ```bash
 $ sudo make update
@@ -79,7 +79,8 @@ $ parrot -c ascii
 
 <h4>Change speed</h4>
 
-Speed can vary from 1 to 15, where 1 is the fastest speed and 15 is the slowest.
+Speed can vary from 1 to 15, where 1 is the fastest speed and 15 is the slowest.<br>
+Default value is 8.
 
 ```bat
 $ parrot -s 12
