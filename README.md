@@ -1,4 +1,8 @@
-<h1 align="center"><code>«Your own Party Parrot for terminal»</code></h1>
+
+<h1 align="center"><code> 🌈🦜 Party Parrot</code></h1>
+<p align="center">
+   <kbd>Your own Party Parrot for terminal</kbd>
+</p>
 <p align="right">
   <a href="https://github.com/endygamedev/party-parrot/actions/workflows/main.yml"><img src="https://github.com/endygamedev/party-parrot/actions/workflows/main.yml/badge.svg?branch=main"></a>
   <img src="https://img.shields.io/badge/platform-linux%20%7C%20macos-lightgrey">
