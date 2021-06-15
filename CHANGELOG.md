@@ -15,3 +15,4 @@ All changes to this project will be documented in this file.
 <h3>README</h3>Date: 2021-06-15 23:53:44 +0300
 <h3>:parrot: Added new metric for speed </h3>Date: 2021-06-16 00:37:07 +0300
 <h3>README</h3>Date: 2021-06-16 00:42:06 +0300
+<h3>README</h3>Date: 2021-06-16 00:45:07 +0300
