@@ -7,7 +7,7 @@
 <details>
   <summary> <b> <img src="./assets/parrot.gif" alt="parrot" width="25"/> Table of content </b> </summary>
   <ol>
-    <li><b><a href="#why">Why do you need to install this?</a></b></li>
+    <li><b><a href="#why" id="title_why">Why do you need to install this?</a></b></li>
     <li><b><a href="#install">Install</a></b></li>
     <li><b><a href="#uninstall">Uninstall</a></b></li>
     <li><b><a href="#update">Update</a></b></li>    
@@ -17,7 +17,7 @@
   </ol>
 </details>
 
-<a id="why">
+<a href="#title_why" id="why">
   <h2>Why do you need to install this?</h2>
 </a>
 <h3> — Next question </h3>
