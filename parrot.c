@@ -13,22 +13,23 @@
 
 
 int is_number(char *arg) {
-	int b = 1;
-	for(int i = 0; i < strlen(arg); i++) {
+	int flag = 1;
+	for(int i = 0; i < (int)strlen(arg); i++) {
 		if(!isdigit(arg[i])) {
-			b = 0;
+			flag = 0;
 			break;
 		}
 	}
-	return b;
+	return flag;
 }
+
 
 int main(int argc, char *argv[]) {
 	struct dirent **dir;
 	char c, path[MAX_PATH] = PATH, full_path[MAX_PATH];
 	fd_set readfds;
 	struct timeval tv;
-	int ch, n, iter = 1, ret, frame = 2, speed = SPEED;
+	int ch, n, iter = 1, ret, frame = 2, speed, speed_flag = 0;
 	FILE **files;
 
 	strcat(path, "text");
@@ -44,15 +45,33 @@ int main(int argc, char *argv[]) {
 		}
 
 		if(!strcmp("-s", argv[i])) {
-			speed = is_number(argv[++i]) ? atoi(argv[i]) : SPEED;
+			if(is_number(argv[++i])) {
+				speed = atoi(argv[i]);
+				speed_flag = 1;
+			} else {
+				perror("ERROR: incorrect value for `speed`...");
+				exit(1);
+			}
+
+			if(speed < 1) {
+				perror("ERROR: speed is too fast...");
+				exit(1);
+			} else if(speed > 15) {
+				perror("ERROR: speed is too slow...");
+				exit(1);
+			}
+
+			speed *= 10000;
 			continue;
 		}
 	}
-
+	
+	if(!speed_flag)
+		speed = SPEED;
 	
 	n = scandir(path, &dir, 0, alphasort);
 	if(n < 0) {
-		perror("ERROR: scandir error...");
+		perror("ERROR: scandir error...\n");
 		exit(1);
 	} else {
 		files = malloc(n*sizeof(FILE*));
@@ -87,12 +106,12 @@ int main(int argc, char *argv[]) {
 			frame = 2;
 		
 		ret = select(STDIN_FILENO + 1, &readfds, NULL, NULL, &tv);
-		if (ret < 0) {
+		if(ret < 0) {
 			perror("ERROR: select error...");
 			exit(1); 
-		} else if (FD_ISSET(STDIN_FILENO, &readfds)) {
+		} else if(FD_ISSET(STDIN_FILENO, &readfds)) {
 			ch = fgetc(stdin);
-			if (ch == 'q') {
+			if(ch == 'q') {
 				iter = 0;
 				system("clear");
 			}
