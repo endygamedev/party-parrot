@@ -79,8 +79,8 @@ $ parrot -c ascii
 
 <h4>Change speed</h4>
 
-Speed can vary from 1 to 15, where 1 is the fastest speed and 15 is the slowest.<br>
-Default value is 8.
+Speed can vary from 1 to 15, where 1 is the fastest speed and 15 is the slowest<br>
+Default value is 8
 
 ```bat
 $ parrot -s 12
@@ -96,7 +96,7 @@ $ parrot -s 12
 And also you can combine this two keys
 
 <a href="#title_fork" id="fork"><h2>Is this fork?</h2></a>
-— Yes, I took the idea <b><a href="https://github.com/jmhobbs/terminal-parrot">here</a></b> and implemented it on C.
+— Yes, I took the idea <b><a href="https://github.com/jmhobbs/terminal-parrot">here</a></b> and implemented it on C
 
 <a href="#title_license" id="license"><h2>License</h2></a>
 
